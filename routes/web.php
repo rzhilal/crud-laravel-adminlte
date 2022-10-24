@@ -19,9 +19,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::resource('users', \App\Http\Controllers\UserController::class)
-    ->middleware('auth');
-
 Route::get('/home', function() {
     return view('home');
 })->name('home')->middleware('auth');
+
+Route::resource('users', \App\Http\Controllers\UserController::class)
+    ->middleware('auth');
+
+Route::resource('buku', \App\Http\Controllers\BukuController::class)
+    ->middleware('auth');

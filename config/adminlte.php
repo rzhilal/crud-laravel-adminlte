@@ -229,6 +229,13 @@ return [
             'url'  => '/users',
             'icon'  => 'fa fa-users',
         ],
+
+        [
+            'text' => 'Data Buku',
+            'url'  => '/buku',
+            'icon'  => 'fa fa-book',
+        ],
+        
     ],
 
     /*
